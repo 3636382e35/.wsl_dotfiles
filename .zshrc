@@ -47,7 +47,8 @@ export LS_COLORS # Set list of themes to pick from when loading at random Settin
 
 # Uncomment the following line if pasting URLs and other text is messed up. DISABLE_MAGIC_FUNCTIONS="true"
 # Uncomment the following line to disable colors in ls. DISABLE_LS_COLORS="true"
-# Uncomment the following line to disable auto-setting terminal title. DISABLE_AUTO_TITLE="true"
+# Uncomment the following line to disable auto-setting terminal title. 
+DISABLE_AUTO_TITLE="true"
 # Uncomment the following line to enable command auto-correction. ENABLE_CORRECTION="true"
 # Uncomment the following line to display red dots whilst waiting for completion. You can also set it to another string to have that shown instead of the 
 # default red dots. e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f" Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 
@@ -89,31 +90,29 @@ source $ZSH/oh-my-zsh.sh
 #
 # github auth login
 alias gh="gh auth login"
-alias tm="tmux" alias cyg="cd /mnt/c/cygwin64/home/Dario/" 
+alias tm="tmux" 
+alias cyg="cd /mnt/c/cygwin64/home/Dario/" 
 alias vim="nvim" 
 alias term-config="vim /mnt/c/Users/Dario/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
-#alias nvim="nvim-linux64/bin/nvim"
 alias lg="rm -rf /mnt/c/cygwin64/home/Dario/Project-Z/Project-Z/.git/index.lock && lazygit" 
-alias ls="ls -latr --color" 
+# alias ls="ls -latr --color" 
 alias pip="python3 -m pip" 
 alias mp3="yt-dlp -f 'ba' -x --audio-format mp3 ytsearch:" 
 alias mp4-best="yt-dlp -f '[ext=mp4]+ba[ext=m4a]/b[ext=mp4]' -o '%(title)s.%(ext)s'" 
 alias yt480="yt-dlp -f 'bv*[height<=480]+ba/b[height<=480] / wv*+ba/w'" 
 alias _1="/mnt/c/ProgramData/GameMakerStudio2/Cache/runtimes/runtime-2023.8.2.152/bin/igor/windows/x64/Igor.exe -j=8 -options='C:\Users\Dario\AppData\Local\GameMakerStudio2\GMS2TEMP\build.bff' -v -- windows Run" 
 alias dd="clear && _1" 
-alias gmdir="cd /mnt/c/Users/Dario/Documents/GameMakerStudio2" 
 alias pz=" cd ~/Stuffs/Project-Z" 
-#alias nvplug="vim ~/.config/nvim/lua/custom/plugins.lua" 
-#alias nvconf="vim ~/.config/nvim/lua/custom/init.lua" 
 alias tar="tar xzvf" 
 alias nf="neofetch" 
 alias music-dir="cd /mnt/c/music"
 alias cat="batcat"
+alias rustlings="cd ~/rustlings/ && rustlings watch"
+alias font-patch="~/Stuffs/FontPatcher/font-patcher.exe"
 #wsl tricks
 alias open='explorer.exe wslpath -w "$PWD"' 
-alias subl="/mnt/c/Users/Dario/Downloads/sublime_text_build_4166_x64/subl.exe"
-alias font-patch="~/Stuffs/FontPatcher/font-patcher.exe"
-alias ls="eza -lla --group-directories-first"
+# alias ls="eza -lla --group-directories-first"
+alias ls="eza -l --time=modified --group-directories-first"
 #
 bindkey -s '^f' 'vim $(fzf)\n'
 #source ~/.repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
