@@ -24,7 +24,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # one was loaded, run: echo $RANDOM_THEME See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="simplerich" 
 # ZSH_THEME="norm" 
-#ZSH_THEME="agnoster" 
+# ZSH_THEME="agnoster" 
  ZSH_THEME="cypher" 
 # ZSH_THEME="clean" 
 # ZSH_THEME="intheloop" 
@@ -88,7 +88,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases alias zshconfig="mate ~/.zshrc" alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-# github auth login
 alias gh="gh auth login"
 alias tm="tmux" 
 alias cyg="cd /mnt/c/cygwin64/home/Dario/" 
@@ -102,7 +101,7 @@ alias mp4-best="yt-dlp -f '[ext=mp4]+ba[ext=m4a]/b[ext=mp4]' -o '%(title)s.%(ext
 alias yt480="yt-dlp -f 'bv*[height<=480]+ba/b[height<=480] / wv*+ba/w'" 
 alias _1="/mnt/c/ProgramData/GameMakerStudio2/Cache/runtimes/runtime-2023.8.2.152/bin/igor/windows/x64/Igor.exe -j=8 -options='C:\Users\Dario\AppData\Local\GameMakerStudio2\GMS2TEMP\build.bff' -v -- windows Run" 
 alias dd="clear && _1" 
-alias pz=" cd ~/Stuffs/Project-Z" 
+alias pz=" cd /mnt/c/cygwin64/home/Dario/Stuffs/Project-Z/" 
 alias tar="tar xzvf" 
 alias nf="neofetch" 
 alias music-dir="cd /mnt/c/music"
@@ -112,7 +111,7 @@ alias font-patch="~/Stuffs/FontPatcher/font-patcher.exe"
 #wsl tricks
 alias open='explorer.exe wslpath -w "$PWD"' 
 # alias ls="eza -lla --group-directories-first"
-alias ls="eza -l --time=modified --group-directories-first"
+alias ls="eza -lla --time=modified --group-directories-first"
 #
 bindkey -s '^f' 'vim $(fzf)\n'
 #source ~/.repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -123,5 +122,6 @@ alias open='explorer.exe'
 alias tmux='tmux && tmux source ~/.config/tmux/.tmux.conf'
 # cd ~
 
+# export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 # install atuin and enable these
 # eval "$(atuin init zsh)"
