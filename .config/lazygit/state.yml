@@ -1,8 +1,13 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/noodlesoup/.wsl_dotfiles
+- /home/noodlesoup/Stuffs/python/ytdlp-gui
+- /mnt/c/cygwin64/home/Dario/Stuffs/Project-Z
+- /home/noodlesoup/Stuffs/.dotfiles
 startuppopupversion: 5
 customcommandshistory:
 - q!
+- Q!
+- q
 hidecommandlog: false
 ignorewhitespaceindiffview: false
