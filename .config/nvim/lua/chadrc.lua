@@ -2,15 +2,16 @@
 ---
 local M = {}
 M.ui = {
-	theme = "gruvbox",
+	theme = "gruvchad",
   transparency = true,
 	hl_override = {
     CursorLineNr = {
+      fg = "#eed123",
       bg = "#282828",
     },
 
     CursorLine = {
-    bg = "#282828",
+      bg = "#282828",
     },
 
     CursorColumn = {

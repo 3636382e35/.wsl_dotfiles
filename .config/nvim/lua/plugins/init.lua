@@ -190,7 +190,6 @@ return {
   	},
   },
 
-
   --
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
@@ -232,7 +231,5 @@ return {
   --     end,
   -- },
 
-
-  
 
 }

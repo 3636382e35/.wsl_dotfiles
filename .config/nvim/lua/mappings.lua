@@ -26,6 +26,7 @@ map("n", "<C-a>", ":TodoTelescope<CR>")
 map("n", "<C-p>", ":Telescope fd<CR>")
 -- map("n", "<C-l>", "<leader>h")
 
+map("n", ":wq", ":wqa")
 map("n", "<C-d>", ":bd!<CR>", {desc = "close buffer"})
 map("n", "<C-f>", ":Telescope current_buffer_fuzzy_find<CR>")
 -- map("n", "<C-f>", ":Telescope live_grep<CR>")

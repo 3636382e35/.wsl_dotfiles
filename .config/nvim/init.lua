@@ -1,17 +1,10 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
--- vim.opt.cursorline = true
+vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = 'yes'
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
--- vim.cmd [[
-
---    augroup ilikecursorline
---       autocmd VimEnter * :highlight CursorLine guibg=#282a2e
---    augroup END
-
--- ]]
 
 vim.cmd([[ autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif ]])
 
